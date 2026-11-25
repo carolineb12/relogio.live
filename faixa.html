@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  html, body { margin: 0; height: 100%; background: transparent; overflow: hidden; }
+  .faixa { display: flex; width: max-content; animation: rolar 20s linear infinite; }
+  .grupo { display: flex; }
+  .grupo img { height: 100px; display: block; }
+  @keyframes rolar {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+</style>
+</head>
+<body>
+<div class="faixa">
+  <div class="grupo">
+    <img src="faixa.png"><img src="faixa.png"><img src="faixa.png">
+  </div>
+  <div class="grupo">
+    <img src="faixa.png"><img src="faixa.png"><img src="faixa.png">
+  </div>
+</div>
+</body>
+</html>
